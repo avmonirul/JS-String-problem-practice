@@ -1,8 +1,12 @@
 function maxInArray(number){
-for(let i = 0; i < number.length; i++){
-    const index = i;
-    const element =number[index];
-    console.log(element);
+    for(let i = 0; i < number.length; i++){
+        let largest = number[0];
+        const index = i;
+        const element =number[index];
+        if(element > largest){
+             largest = element;
+        }
+        return largest;
     }
 }
 
